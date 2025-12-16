@@ -1,0 +1,44 @@
+/* src/App.css */
+:root {
+  --primary: #2c3e50;
+  --accent: #e0d8c0;
+  --bg: #f4f6f9;
+  --white: #ffffff;
+  --success: #27ae60;
+  --danger: #e74c3c;
+  --text: #333;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+body { background-color: var(--bg); color: var(--text); }
+
+/* Layout */
+.app-container { display: flex; height: 100vh; overflow: hidden; }
+.main-content { flex: 1; padding: 30px; overflow-y: auto; display: flex; flex-direction: column; gap: 25px; }
+
+/* Sidebar */
+.sidebar { width: 250px; background-color: var(--primary); color: white; padding: 20px; display: flex; flex-direction: column; }
+.logo { font-size: 1.5em; font-weight: bold; margin-bottom: 40px; color: var(--accent); display: flex; align-items: center; gap: 10px; }
+.nav-link { text-decoration: none; color: #b0b8c5; padding: 12px 15px; border-radius: 8px; display: flex; align-items: center; gap: 15px; margin-bottom: 10px; transition: 0.3s; }
+.nav-link:hover, .nav-link.active { background-color: rgba(255,255,255,0.1); color: white; }
+.nav-link.active { border-left: 4px solid var(--accent); }
+
+/* Dashboard Cards */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.card { background: var(--white); padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.dashboard-split { display: grid; grid-template-columns: 2fr 1fr; gap: 25px; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
+.btn { padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; margin-right: 5px; }
+.btn-verify { background: rgba(39, 174, 96, 0.1); color: var(--success); }
+.btn-reject { background: rgba(192, 57, 43, 0.1); color: var(--danger); }
+.btn-primary { background: var(--primary); color: white; padding: 10px; width: 100%; }
+
+/* Home Page */
+.home-container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; }
+.portal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1000px; width: 100%; padding: 20px; }
+.role-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-decoration: none; color: #333; transition: transform 0.3s; display: flex; flex-direction: column; align-items: center; }
+.role-card:hover { transform: translateY(-10px); border-top: 5px solid var(--accent); }
+.icon-circle { width: 80px; height: 80px; background: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; font-size: 2em; color: var(--primary); }
