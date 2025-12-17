@@ -44,10 +44,10 @@ const Admin = () => {
             <p style={{ color: '#7f8c8d', margin: '5px 0 0 0' }}>System Overview for St. Joseph's College Alumni</p>
           </div>
           
-          {/* Dr. Jenifer Profile Badge */}
+          {/* Justin Profile Badge */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '15px', background: 'white', padding: '10px 20px', borderRadius: '50px', boxShadow: '0 2px 5px rgba(0,0,0,0.05)' }}>
             <div style={{ textAlign: 'right' }}>
-              <div style={{ fontWeight: 'bold', color: '#2c3e50' }}>Dr. Jenifer</div>
+              <div style={{ fontWeight: 'bold', color: '#2c3e50' }}>Justin</div>
               <div style={{ fontSize: '0.8em', color: '#7f8c8d' }}>Administrator</div>
             </div>
             <div style={{ width: '40px', height: '40px', background: '#e0d8c0', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: '#555' }}>
