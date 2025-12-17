@@ -10,18 +10,21 @@ const Home = () => {
       <p style={{ color: '#666', marginBottom: '50px' }}>St. Joseph's College (Autonomous), Tiruchirappalli</p>
       
       <div className="portal-grid">
-        <Link to="/admin" className="role-card">
+        {/* All links now go to /login first for security */}
+        <Link to="/login" className="role-card">
           <div className="icon-circle"><FaUserShield /></div>
           <h3>Admin Module</h3>
         </Link>
-        <Link to="/alumni" className="role-card">
+        <Link to="/login" className="role-card">
           <div className="icon-circle"><FaUserTie /></div>
           <h3>Alumni Module</h3>
         </Link>
-        <Link to="/student" className="role-card">
+        <Link to="/login" className="role-card">
           <div className="icon-circle"><FaUserGraduate /></div>
           <h3>Student Module</h3>
         </Link>
+        
+        {/* These can stay public if you want */}
         <Link to="/events" className="role-card">
           <div className="icon-circle"><FaCalendarAlt /></div>
           <h3>Events Module</h3>
@@ -31,7 +34,7 @@ const Home = () => {
           <h3>Search Directory</h3>
         </Link>
       </div>
-    </div>
+      </div>
   );
 };
 export default Home;
